@@ -44,7 +44,7 @@ with open(sys.argv[1]) as csv_file:
     for row in csv_reader:
         signal = {
             "label": row[0],
-            "protocol": "Pronto",
+            "protocol": "PRONTO",
             "code": row[1].lstrip()
         }
         skipbr['signals'].append(signal)
